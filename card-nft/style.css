@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;500;600;700;800;900&display=swap');
+
+:root {
+    --very-dark-blue-main-bg: #0D192C;
+    --soft-blue: #8BACD9;
+    --white: #FFFFFF;
+    --cyan: #00FFF8;
+    --card-bg: #15263F;
+    --line: #15263F;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--very-dark-blue-main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    width: 350px;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+
+    background-color: var(--card-bg);
+    border-radius: 15px;
+}
+
+.principal__imagem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.principal__imagem img {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+}
+
+.principal__conteudo {
+    width: 70%;
+
+}
+
+.principal__conteudo h1 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    margin: 8px 0 0 0;
+}
+
+.principal__conteudo p {
+    color: var(--soft-blue);
+    font-size: 13px;
+    margin: 10px 0 0 0;
+}
+
+.principal__conteudo__valor {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 70%;
+    margin: 10px 0 0 0;
+
+    font-size: 8px;
+    gap: 7px;
+
+}
+
+.principal__conteudo__preco {
+    color: var(--cyan);
+}
+
+.principal__conteudo__relogio {
+    margin: 0 0 0 18%;
+}
+
+.principal__conteudo__time {
+    color: var(--soft-blue);
+}
+
+.principal__conteudo__line {
+
+    width: 70%;
+    margin: 10px 0 0 0;
+
+}
+
+.principal__conteudo__line hr{
+    border-color: var(--line);
+    
+}
+
+.principal__conteudo__author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 0 0;
+    gap: 10px;
+}
+
+.principal__conteudo__author img{
+    width: 30px;
+
+
+
+    border: solid 1px var(--white);
+    border-radius: 50%;
+}
+
+.principal__conteudo__author p{
+    color: var(--soft-blue);
+}
+
+.principal__conteudo__author strong{
+    color: var(--white);
+}
